@@ -1,0 +1,49 @@
+<?php
+    use Kairnial\LaravelApi\Models\Enums\LanguageCodes;
+    use Illuminate\Database\Migrations\Migration;
+    use Illuminate\Database\Schema\Blueprint;
+    use Illuminate\Support\Facades\Schema;
+    use Illuminate\Support\Facades\DB;
+
+    class CreateLanguagesTable extends Migration
+    {
+        /**
+         * Run the migrations.
+         *
+         * @return void
+         */
+        public function up(): void
+        {
+            Schema::create('languages', function (Blueprint $table) {
+                $table->uuid('pk_language')->primary();
+                $table->string('language_locale', 8)->unique();
+                $table->string('language_name', 64)->unique();
+                $table->timestamps();
+                $table->softDeletes();
+            });
+
+            DB::table('languages')->insert([[
+                'pk_language'     => LanguageCodes::en->uuid(),
+                'language_name'   => LanguageCodes::en->name(),
+                'language_locale' => LanguageCodes::en,
+            ],[
+                'pk_language'     => LanguageCodes::fr->uuid(),
+                'language_name'   => LanguageCodes::fr->name(),
+                'language_locale' => LanguageCodes::fr,
+            ],[
+                'pk_language'     => LanguageCodes::de->uuid(),
+                'language_name'   => LanguageCodes::de->name(),
+                'language_locale' => LanguageCodes::de,
+            ]]);
+        }
+
+        /**
+         * Reverse the migrations.
+         *
+         * @return void
+         */
+        public function down(): void
+        {
+            Schema::dropIfExists('languages');
+        }
+    }

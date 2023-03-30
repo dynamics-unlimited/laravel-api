@@ -1,0 +1,12 @@
+# Ignore everything in this directory
+*
+# Except these files
+!inspectionProfiles/*
+!inspectionProfiles
+!codeStyles/*
+!codeStyles
+!keyMaps/*
+!keyMaps
+
+!Laravel API package.iml
+!.gitignore
