@@ -1,5 +1,5 @@
 <?php
-    use Kairnial\LaravelApi\Models\Enums\ApiResponseStatus;
+    use Kairnial\Common\Models\Enums\ApiResponseStatus;
     use Symfony\Component\HttpFoundation\Response;
 
     return [

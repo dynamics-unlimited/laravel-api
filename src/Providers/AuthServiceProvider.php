@@ -4,7 +4,7 @@
     use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
     use Illuminate\Validation\UnauthorizedException;
     use Kairnial\LaravelApi\Services\Auth\JwtGuard;
-    use Kairnial\LaravelApi\Models\ExternalUser;
+    use Kairnial\Common\Models\ExternalUser;
     use Illuminate\Support\Facades\Auth;
     use Illuminate\Support\Facades\Gate;
     use Illuminate\Http\Request;

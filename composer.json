@@ -17,7 +17,8 @@
     "laravel/framework": "^10",
     "spatie/laravel-translation-loader": "^2.7.6",
     "juststeveking/laravel-redoc": "^2.0",
-    "darkaonline/l5-swagger": "^8.5"
+    "darkaonline/l5-swagger": "^8.5",
+    "dynamics-unlimited/laravel-common-package": "^1.0"
   },
   "require-dev": {
     "fakerphp/faker": "^1.21",

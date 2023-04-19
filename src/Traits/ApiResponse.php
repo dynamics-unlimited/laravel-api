@@ -1,7 +1,7 @@
 <?php
     namespace Kairnial\LaravelApi\Traits;
 
-    use Kairnial\LaravelApi\Models\Enums\ApiResponseStatus;
+    use Kairnial\Common\Models\Enums\ApiResponseStatus;
     use Illuminate\Http\Resources\Json\JsonResource;
     use Symfony\Component\HttpFoundation\Response;
     use Illuminate\Http\JsonResponse;

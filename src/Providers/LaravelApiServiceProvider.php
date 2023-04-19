@@ -1,13 +1,13 @@
 <?php /** @noinspection PhpIllegalPsrClassPathInspection */
 
 namespace Kairnial\LaravelApi\Providers {
-    use Illuminate\Support\ServiceProvider;
+    use Kairnial\Common\Providers\BaseServiceProvider;
     use Illuminate\Routing\UrlGenerator;
 
     /**
      * Generic provider used to configure the framework
      */
-    class LaravelApiServiceProvider extends ServiceProvider
+    class LaravelApiServiceProvider extends BaseServiceProvider
     {
         /**
          * Root path relative to this class definition

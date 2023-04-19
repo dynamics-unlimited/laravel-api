@@ -3,7 +3,7 @@
 
     use Illuminate\Validation\UnauthorizedException;
     use Illuminate\Contracts\Auth\Authenticatable;
-    use Kairnial\LaravelApi\Models\ExternalUser;
+    use Kairnial\Common\Models\ExternalUser;
     use Illuminate\Support\Facades\Storage;
     use Illuminate\Contracts\Auth\Guard;
     use Illuminate\Auth\GuardHelpers;

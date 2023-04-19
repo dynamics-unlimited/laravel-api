@@ -9,6 +9,7 @@
     use Laravel\Sanctum\Exceptions\MissingAbilityException;
     use Illuminate\Auth\Access\AuthorizationException;
     use Illuminate\Validation\UnauthorizedException;
+    use Kairnial\Common\Http\Resources\BaseResource;
     use Symfony\Component\HttpFoundation\Response;
     use Illuminate\Validation\ValidationException;
     use Firebase\JWT\SignatureInvalidException;

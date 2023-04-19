@@ -1,5 +1,5 @@
 <?php
-    use Kairnial\LaravelApi\Models\Enums\LanguageCodes;
+    use Kairnial\Common\Models\Enums\LanguageCodes;
     use Illuminate\Database\Migrations\Migration;
     use Illuminate\Database\Schema\Blueprint;
     use Illuminate\Support\Facades\Schema;

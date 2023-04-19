@@ -9,7 +9,7 @@
          * This is the model used by the Db Translation loader. You can put any model here
          * that extends Spatie\TranslationLoader\LanguageLine.
          */
-        'model' => Kairnial\LaravelApi\Models\Translation::class,
+        'model' => Kairnial\Common\Models\Translation::class,
         /*
          * This is the translation manager which overrides the default Laravel `translation.loader`
          */
